@@ -105,7 +105,7 @@ if [ $EXITCODE -ne 0 ]; then
 fi
 
 #Strip debug symbols and copy to the prebuilt folder
-PLATFORMS=(arm64-v8a x86_64 mips64 armeabi armeabi-v7a x86 mips)
+PLATFORMS=(arm64-v8a x86_64 mips64 armeabi armeabi-v7a armeabi-v7a-hard x86 mips)
 DESTDIR=$SCRIPTPATH/../prebuilt-with-ssl/android
 
 for p in ${PLATFORMS[*]}; do 
